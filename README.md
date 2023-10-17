@@ -1,6 +1,6 @@
 # Easy Eats
 
-## Integrantes: <a href="https://github.com/mariazinhafefe">Maria Fernanda</a>, <a href="https://www.linkedin.com/in/thainabeatriz/">Thaina Beatriz</a>, <a href="https://github.com/pedrorodante">Pedro Rodante</a>, <a href="https://www.linkedin.com/in/caique-matos-055841111/">Caique Matos</a>
+## Integrantes: <a href="https://www.linkedin.com/in/caique-matos-055841111/">Caique Matos</a>,<a href="https://github.com/mariazinhafefe">Maria Fernanda</a>,<a href="https://github.com/pedrorodante">Pedro Rodante</a>,<a href="https://www.linkedin.com/in/thainabeatriz/">Thaina Beatriz</a>
 
 ## Descrição
 
