@@ -18,6 +18,9 @@ import { MesaComponent } from './mesa/mesa.component';
 import { ExcluirMesaComponent } from './excluir-mesa/excluir-mesa.component';
 import { CriarMesaComponent } from './criar-mesa/criar-mesa.component';
 import { CozinhaComponent } from './cozinha/cozinha.component';
+import { HeaderComponent } from './header/header.component';
+import { ModalExluirComponent } from './modal-exluir/modal-exluir.component';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { CozinhaComponent } from './cozinha/cozinha.component';
     MesaComponent,
     ExcluirMesaComponent,
     CriarMesaComponent,
-    CozinhaComponent
+    CozinhaComponent,
+    HeaderComponent,
+    ModalExluirComponent
   ],
   imports: [
     BrowserModule,
