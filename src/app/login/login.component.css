@@ -71,13 +71,14 @@ input {
     background: transparent;
     padding: 10px 42px;
     width: -webkit-fill-available;
+    color: #fff;
 }
 
 
 input::after {
     position: absolute;
     content: "X";
-    left: -10%;
+    left: -5%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -106,7 +107,7 @@ input::after {
 .box-input-email::before{
     position: absolute;
     content: url(../../assets/main/login/sms.png);
-    left: 5%;
+    left: 4%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -117,7 +118,7 @@ input::after {
 .box-input-senha::before{
     position: absolute;
     content: url(../../assets/main/login/key-square.png);
-    left: 5%;
+    left: 4%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -125,7 +126,7 @@ input::after {
 .box-input-senha::after{
     position: absolute;
     content: url(../../assets/main/login/eye.png);
-    right: 5%;
+    right: 4%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
