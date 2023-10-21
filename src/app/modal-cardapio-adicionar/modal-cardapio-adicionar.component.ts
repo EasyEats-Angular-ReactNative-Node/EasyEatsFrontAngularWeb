@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./modal-cardapio-adicionar.component.css']
 })
 export class ModalCardapioAdicionarComponent {
-  close_modal() {
+  closeModalAdicionar() {
     window.location.reload()
   }
 }
