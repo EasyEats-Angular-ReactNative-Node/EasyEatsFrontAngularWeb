@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ModalExluirComponent {
   
+  fecharModal(){    
+    window.location.reload();
+  }
 }

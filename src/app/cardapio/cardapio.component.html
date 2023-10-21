@@ -20,7 +20,7 @@
             </div>
             <div class="box-50">
                 <div class="box-btn-adicionar-lista text-right">
-                    <button>Adicionar</button>
+                    <button (click)="openModalAdicionar()">Adicionar</button>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="box-10">
                             <div class="box-btn-lixeira text-right">
-                                <button class="box-btn-lixeira"><img src="../../assets/main/lista/lixeira.png"
+                                <button (click)="openModal()" class="box-btn-lixeira"><img src="../../assets/main/lista/lixeira.png"
                                         alt="Lixeira"></button>
                             </div>
                         </div>
@@ -86,5 +86,11 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="box_modal_cardapio-adicionar">
+        <app-modal-cardapio-adicionar></app-modal-cardapio-adicionar>
+    </div>
+    <div id="box_modal_cardapio-excluir">
+        <app-modal-cardapio-excluir></app-modal-cardapio-excluir>
     </div>
 </main>

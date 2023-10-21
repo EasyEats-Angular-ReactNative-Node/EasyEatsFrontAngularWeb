@@ -68,7 +68,30 @@
 
 /* Modal */
 
-.box-modal-component{
+.box_modal_cardapio-excluir-1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.box_modal_cardapio-excluir{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.box_modal_cardapio-adicionar-1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.box_modal_cardapio-adicionar{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -81,4 +104,30 @@
 .box-desc-cardapio p,
 .box-preco-cardapio p{
     color: #c9c9c9;
+}
+
+#box_modal_cardapio-excluir::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333b0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .6s all ease;
+}
+
+#box_modal_cardapio-adicionar::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333b0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .6s all ease;
 }

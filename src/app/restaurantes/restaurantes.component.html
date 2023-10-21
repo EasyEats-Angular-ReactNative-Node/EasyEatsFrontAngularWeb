@@ -10,7 +10,7 @@
             </div>
             <div class="box-50">
                 <div class="box-btn-adicionar-lista text-right">
-                    <button>Adicionar</button>
+                    <button (click)="openModalAdicionar()" id="add_btn">Adicionar</button>
                 </div>
             </div>
         </div>
@@ -27,7 +27,8 @@
                         </div>
                         <div class="box-50">
                             <div class="box-btn-lixeira text-right">
-                                <button class="box-btn-lixeira"><img src="../../assets/main/lista/lixeira.png" alt="Lixeira"></button>
+                                <button (click)="openModal()" class="box-btn-lixeira"><img
+                                        src="../../assets/main/lista/lixeira.png" alt="Lixeira"></button>
                             </div>
                         </div>
                     </div>
@@ -35,7 +36,10 @@
             </div>
         </div>
     </div>
-    <div class="box-modal-component">
+    <div id="box_modal_component">
         <app-modal-exluir></app-modal-exluir>
+    </div>
+    <div id="box_modal_component_adicionar" class="box_modal_component_adicionar">
+        <app-modal-adicionar-restaurantes></app-modal-adicionar-restaurantes>   
     </div>
 </main>

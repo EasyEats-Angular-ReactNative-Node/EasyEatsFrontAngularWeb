@@ -20,6 +20,9 @@ import { CriarMesaComponent } from './criar-mesa/criar-mesa.component';
 import { CozinhaComponent } from './cozinha/cozinha.component';
 import { HeaderComponent } from './header/header.component';
 import { ModalExluirComponent } from './modal-exluir/modal-exluir.component';
+import { ModalAdicionarRestaurantesComponent } from './modal-adicionar-restaurantes/modal-adicionar-restaurantes.component';
+import { ModalCardapioAdicionarComponent } from './modal-cardapio-adicionar/modal-cardapio-adicionar.component';
+import { ModalCardapioExcluirComponent } from './modal-cardapio-excluir/modal-cardapio-excluir.component';
 
 
 @NgModule({
@@ -41,7 +44,10 @@ import { ModalExluirComponent } from './modal-exluir/modal-exluir.component';
     CriarMesaComponent,
     CozinhaComponent,
     HeaderComponent,
-    ModalExluirComponent
+    ModalExluirComponent,
+    ModalAdicionarRestaurantesComponent,
+    ModalCardapioAdicionarComponent,
+    ModalCardapioExcluirComponent
   ],
   imports: [
     BrowserModule,

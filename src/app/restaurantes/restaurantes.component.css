@@ -63,6 +63,26 @@ main{
 }
 
 /* Modal */
+#box_modal_component::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333b0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .6s all ease;
+}
+
+.box-modal-component_1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
 
 .box-modal-component{
     position: absolute;
@@ -70,4 +90,32 @@ main{
     top: 50%;
     transform: translate(-50%, -50%);
     display: none;
+}
+
+.box_modal_component_adicionar{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.box_modal_component_adicionar_1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+#box_modal_component_adicionar::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333b0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .6s all ease;
 }
