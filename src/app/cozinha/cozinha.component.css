@@ -1,7 +1,3 @@
-main{
-    height: auto;
-}
-
 .box-title-lista h1 {
     color: #C9C9C9;
     font-weight: 800;
@@ -46,7 +42,6 @@ main{
     background: #1D4652;
     padding: 17px 14px;
     border-radius: 11px;
-    margin: 15px 0;
 }
 
 .box-btn-lista button {
@@ -68,6 +63,25 @@ main{
 .box-btn-lista button:hover,
 .box-btn-lixeira button:hover {
     transform: scale(1.03);
+}
+
+.box-bg-cozinha {
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow-y: auto;
+
+}
+
+.box-item-cozinha {
+    width: 15%;
+    height: 350px;
 }
 
 
@@ -105,15 +119,13 @@ main{
     font-weight: 800;
 }
 
-
-
 .box-desc-cardapio p {
     color: #c9c9c9;
     margin: 10px 0 20px 0;
 }
 
 .box-btn-lixeira button {
-    height: 55px;
+    height: 30px;
     background: linear-gradient(90.3deg, #F9903A 0.16%, #BF3900 101.62%);
     border-radius: 10px;
     border: none;
