@@ -16,13 +16,13 @@
         </div>
     </div>
     <div class="container">
-        <div class="box-bg-lista">
+        <div class="box-bg-lista" *ngFor="let restaurante of restaurantes">
             <div class="flex">
                 <div class="box-100">
                     <div class="flex-between box-btn-item-lista">
                         <div class="box-50">
                             <div class="box-btn-lista">
-                                <button>Restaurante</button>
+                                <button #nome>{{ restaurante.nome }}</button>
                             </div>
                         </div>
                         <div class="box-50">
@@ -40,6 +40,6 @@
         <app-modal-exluir></app-modal-exluir>
     </div>
     <div id="box_modal_component_adicionar" class="box_modal_component_adicionar">
-        <app-modal-adicionar-restaurantes></app-modal-adicionar-restaurantes>   
+        <app-modal-adicionar-restaurantes></app-modal-adicionar-restaurantes>
     </div>
 </main>
