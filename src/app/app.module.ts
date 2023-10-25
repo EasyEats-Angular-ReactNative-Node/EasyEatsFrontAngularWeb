@@ -19,6 +19,7 @@ import { ModalAdicionarPratoComponent } from './modal-adicionar-prato/modal-adic
 import { ModalExcluirPratoComponent } from './modal-excluir-prato/modal-excluir-prato.component';
 import { ModalAdicionarMesaComponent } from './modal-adicionar-mesa/modal-adicionar-mesa.component';
 import { ModalExcluirMesaComponent } from './modal-excluir-mesa/modal-excluir-mesa.component';
+import { FuncaoAutenticadoraComponent } from './funcao-autenticadora/funcao-autenticadora.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ModalExcluirMesaComponent } from './modal-excluir-mesa/modal-excluir-me
     ModalAdicionarPratoComponent,
     ModalExcluirPratoComponent,
     ModalAdicionarMesaComponent,
-    ModalExcluirMesaComponent
+    ModalExcluirMesaComponent,
+    FuncaoAutenticadoraComponent
   ],
   imports: [
     BrowserModule,
