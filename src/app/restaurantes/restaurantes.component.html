@@ -16,18 +16,21 @@
         </div>
     </div>
     <div class="container">
-        <div class="box-bg-lista" *ngFor="let restaurante of restaurantes">
+        <div class="box-bg-lista">
             <div class="flex">
-                <div class="box-100">
+                <div class="box-100" *ngFor="let restaurante of restaurantes">
                     <div class="flex-between box-btn-item-lista">
                         <div class="box-50">
                             <div class="box-btn-lista">
                                 <button #nome>{{ restaurante.nome }}</button>
                             </div>
                         </div>
-                        <div class="box-50">
+                        <div class="box-20">
+                          <p #status>{{ restaurante.status }}</p>
+                        </div>
+                        <div class="box-30">
                             <div class="box-btn-lixeira text-right">
-                                <button (click)="openModal()" class="box-btn-lixeira"><img
+                                <button #ID (click)="openModalDeletar(restaurante.ID)" class="box-btn-lixeira"><img
                                         src="../../assets/main/lista/lixeira.png" alt="Lixeira"></button>
                             </div>
                         </div>

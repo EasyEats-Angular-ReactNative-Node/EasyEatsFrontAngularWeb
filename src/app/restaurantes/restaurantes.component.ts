@@ -31,8 +31,10 @@ export class RestaurantesComponent {
     modal_hide_adicionar?.classList.add("box_modal_component_adicionar");
   }
 
-  openModal() {
+  openModalDeletar(id : string) {
     console.log("Botão acionado");
+
+    localStorage.setItem('deletarID', id)
 
     let btn_modal = document.getElementById("box_modal_component");
 
@@ -49,16 +51,11 @@ export class RestaurantesComponent {
     btn_modal?.classList.add("box_modal_component_adicionar_1");
   }
 
-  exibirRestaurantes(restaurantes: any[]) {
-    this.restaurantes = restaurantes;
-  }
-
   Restaurantes() {
     $.post(`https://3chpc8-3000.csb.app/restaurantes`, {}, (res) => {
-      let restaurantes = res;
       console.log("Recebi alguma coisa");
       console.log(res);
-      this.exibirRestaurantes(restaurantes);
+      this.restaurantes = res;
     });
   }
 }

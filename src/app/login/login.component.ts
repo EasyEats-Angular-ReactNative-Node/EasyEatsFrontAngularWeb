@@ -31,7 +31,11 @@ export class LoginComponent {
           alert('Usuário não encontrado')
           // this.router.navigate(['/login']);
           window.location.reload();
-        } else if (res[0].ID === 1) {
+        } else if (res === "Status Inativo"){
+          alert('Seu acesso foi negado pelos administradores, por favor entre em contato com a equipe de suporte.')
+          window.location.reload();
+        }
+        else if (res[0].ID === 1) {
           this.localStorage(res[0].ID, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao, res[0].cargo);
           this.router.navigate(['/restaurantes']);
         } else {
@@ -39,7 +43,7 @@ export class LoginComponent {
           this.router.navigate(['/menu-restaurante']);
         }
         console.log(res[0].cargo);
-        
+
       },
     );
   }

@@ -34,6 +34,10 @@ main{
     border-radius: 16px;
 }
 
+.box-20 p{
+  color: #C3C8D4;
+}
+
 .box-btn-item-lista {
     background: #1D4652;
     padding: 17px 14px;
