@@ -123,13 +123,13 @@ input::after {
     transform: translate(-50%, -50%);
 }
 
-.box-input-senha::after{
+/* .box-input-senha::after{
     position: absolute;
     content: url(../../assets/main/login/eye.png);
     right: 4%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 .box-img-login img{
     width: 60%;

@@ -13,13 +13,13 @@
                             <h1>Login</h1>
                             <div class="inputs">
                                 <div class="box-input-email">
-                                    <input placeholder="Email" type="text" id="email">
+                                    <input placeholder="Usuário" type="text" id="nome" #nome>
                                 </div>
                                 <div class="box-input-senha">
-                                    <input placeholder="Senha" type="password" id="senha">
+                                    <input placeholder="Senha" type="password" id="senha" #senha>
                                 </div>
                                 <div class="box-btn-form-login">
-                                    <button class="btn-login">Entrar</button>
+                                    <button (click)="Login(nome.value, senha.value)" class="btn-login">Entrar</button>
                                 </div>
                             </div>
                         </div>
