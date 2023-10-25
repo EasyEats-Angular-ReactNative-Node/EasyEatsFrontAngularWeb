@@ -5,24 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
-import { ExcluirRestauranteComponent } from './excluir-restaurante/excluir-restaurante.component';
-import { CriarRestauranteComponent } from './criar-restaurante/criar-restaurante.component';
 import { MenuRestauranteComponent } from './menu-restaurante/menu-restaurante.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
-import { ExcluirPratoComponent } from './excluir-prato/excluir-prato.component';
-import { CriarPratoComponent } from './criar-prato/criar-prato.component';
 import { PratoComponent } from './prato/prato.component';
 import { MesasComponent } from './mesas/mesas.component';
 import { MesaComponent } from './mesa/mesa.component';
-import { ExcluirMesaComponent } from './excluir-mesa/excluir-mesa.component';
-import { CriarMesaComponent } from './criar-mesa/criar-mesa.component';
 import { CozinhaComponent } from './cozinha/cozinha.component';
 import { HeaderComponent } from './header/header.component';
-import { ModalExluirComponent } from './modal-exluir/modal-exluir.component';
-import { ModalAdicionarRestaurantesComponent } from './modal-adicionar-restaurantes/modal-adicionar-restaurantes.component';
-import { ModalCardapioAdicionarComponent } from './modal-cardapio-adicionar/modal-cardapio-adicionar.component';
-import { ModalCardapioExcluirComponent } from './modal-cardapio-excluir/modal-cardapio-excluir.component';
+import { ModalAdicionarRestauranteComponent } from './modal-adicionar-restaurante/modal-adicionar-restaurante.component';
+import { ModalExcluirRestauranteComponent } from './modal-excluir-restaurante/modal-excluir-restaurante.component';
+import { ModalAdicionarPratoComponent } from './modal-adicionar-prato/modal-adicionar-prato.component';
+import { ModalExcluirPratoComponent } from './modal-excluir-prato/modal-excluir-prato.component';
+import { ModalAdicionarMesaComponent } from './modal-adicionar-mesa/modal-adicionar-mesa.component';
+import { ModalExcluirMesaComponent } from './modal-excluir-mesa/modal-excluir-mesa.component';
 
 
 @NgModule({
@@ -30,24 +26,20 @@ import { ModalCardapioExcluirComponent } from './modal-cardapio-excluir/modal-ca
     AppComponent,
     LoginComponent,
     RestaurantesComponent,
-    ExcluirRestauranteComponent,
-    CriarRestauranteComponent,
     MenuRestauranteComponent,
     PerfilComponent,
     CardapioComponent,
-    ExcluirPratoComponent,
-    CriarPratoComponent,
     PratoComponent,
     MesasComponent,
     MesaComponent,
-    ExcluirMesaComponent,
-    CriarMesaComponent,
     CozinhaComponent,
     HeaderComponent,
-    ModalExluirComponent,
-    ModalAdicionarRestaurantesComponent,
-    ModalCardapioAdicionarComponent,
-    ModalCardapioExcluirComponent
+    ModalAdicionarRestauranteComponent,
+    ModalExcluirRestauranteComponent,
+    ModalAdicionarPratoComponent,
+    ModalExcluirPratoComponent,
+    ModalAdicionarMesaComponent,
+    ModalExcluirMesaComponent
   ],
   imports: [
     BrowserModule,
