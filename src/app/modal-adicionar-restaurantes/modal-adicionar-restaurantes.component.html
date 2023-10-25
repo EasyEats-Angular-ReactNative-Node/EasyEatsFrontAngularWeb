@@ -4,12 +4,12 @@
             <div class="flex-between">
                 <div class="box-100">
                     <div class="box-input-adicionar">
-                        <input type="text" placeholder="Nome do Restaurante">
+                        <input type="text" placeholder="Nome do Restaurante" name="nome" id="nome" #nome>
                     </div>
                 </div>
                 <div class="box-100">
                     <div class="box-input-adicionar">
-                        <input type="text" placeholder="Senha de Acesso">
+                        <input type="text" placeholder="Senha de Acesso" name="senha" id="senha" #senha>
                     </div>
                 </div>
                 <div class="box-50">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="box-50">
                     <div class="box-btn-adicionar">
-                        <button>Adicionar</button>
+                        <button (click)="cadastroRestaurante(nome.value, senha.value)" >Adicionar</button>
                     </div>
                 </div>
             </div>

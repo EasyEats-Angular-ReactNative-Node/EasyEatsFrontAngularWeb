@@ -8,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class RestaurantesComponent {
 
   ngOnInit() {
+
+    let cargo = localStorage.getItem('cargo');
+
+    if (cargo != "1") {
+      window.location.href = "/login";
+      alert('Sai fora tio');
+    }
+
     let modal_hide = document.getElementById("box_modal_component");
     let modal_hide_adicionar = document.getElementById("box_modal_component_adicionar");
 
-    modal_hide?.classList.add("box-modal-component")
-    modal_hide_adicionar?.classList.add("box_modal_component_adicionar")
+    modal_hide?.classList.add("box-modal-component");
+    modal_hide_adicionar?.classList.add("box_modal_component_adicionar");
   }
 
   openModal() {
@@ -31,6 +39,5 @@ export class RestaurantesComponent {
 
     btn_modal?.classList.remove("box_modal_component_adicionar");
     btn_modal?.classList.add("box_modal_component_adicionar_1");
-
   }
 }

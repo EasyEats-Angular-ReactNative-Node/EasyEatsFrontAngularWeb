@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as $ from 'jquery';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +13,6 @@ export class LoginComponent {
   Login(nome: string, senha: string) {
 
     console.log('Passei no primeiro ponto do login');
-
     $.post(
       `https://3chpc8-3000.csb.app/login`,
       {
@@ -27,22 +25,26 @@ export class LoginComponent {
 
         if (res === "Senha incorreta") {
           alert('Senha incorreta')
-          this.router.navigate(['/login']);
+          // this.router.navigate(['/login']);
+          window.location.reload();
         } else if (res === "Usuário não encontrado") {
           alert('Usuário não encontrado')
-          this.router.navigate(['/login']);
+          // this.router.navigate(['/login']);
+          window.location.reload();
         } else if (res[0].ID === 1) {
-          this.localStorage(res[0].ID, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao);
+          this.localStorage(res[0].ID, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao, res[0].cargo);
           this.router.navigate(['/restaurantes']);
         } else {
-          this.localStorage(res[0].ID, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao);
+          this.localStorage(res[0].ID, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao, res[0].cargo);
           this.router.navigate(['/menu-restaurante']);
         }
+        console.log(res[0].cargo);
+        
       },
     );
   }
 
-  localStorage(id: string, nome: string, senha: string, endereco: string, link: string, descricao: string) {
+  localStorage(id: string, nome: string, senha: string, endereco: string, link: string, descricao: string, cargo: string) {
     console.log('Fui acionado');
 
     localStorage.setItem('id', id); //salvando o id no localStorage
@@ -51,5 +53,6 @@ export class LoginComponent {
     localStorage.setItem('endereco', endereco);
     localStorage.setItem('link', link);
     localStorage.setItem('descricao', descricao);
+    localStorage.setItem('cargo', cargo);
   }
 }
