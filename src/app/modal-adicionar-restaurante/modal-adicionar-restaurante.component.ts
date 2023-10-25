@@ -19,7 +19,7 @@ export class ModalAdicionarRestauranteComponent {
     console.log('Passei no primeiro ponto do login');
 
     $.post(
-      `https://3chpc8-3000.csb.app/cadastroRestaurante`,
+      `https://kwr3pd-3000.csb.app/cadastroRestaurante`,
       {
         nome: nome,
         senha: senha

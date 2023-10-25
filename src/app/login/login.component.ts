@@ -14,7 +14,7 @@ export class LoginComponent {
 
     console.log('Passei no primeiro ponto do login');
     $.post(
-      `https://3chpc8-3000.csb.app/login`,
+      `https://kwr3pd-3000.csb.app/login`,
       {
         nome: nome,
         senha: senha
