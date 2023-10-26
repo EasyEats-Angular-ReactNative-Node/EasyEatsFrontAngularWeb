@@ -9,17 +9,23 @@ import * as $ from 'jquery';
 })
 export class FuncaoAutenticadoraComponent {
 
-  constructor(private router: Router) {}
-
-  id = localStorage.getItem('id')
-
   ngOnInit(){
-    console.log(this.id);
-    let cargo = localStorage.getItem('cargo');
+    let id = localStorage.getItem('id')
+    let idInt = 0;
 
-    if (cargo != "1") {
-      window.location.href = "/login";
+    console.log(id);
+
+    if (id === null) {
+      window.location.href = "/";
       alert('Você não está logado!');
+      localStorage.clear();
+    }else{
+      idInt = parseInt(id)
+      if (idInt <= 0 || idInt >= 999999){
+        window.location.href = "/";
+        alert('Você não está logado!');
+        localStorage.clear();
+      }
     }
   }
 }
