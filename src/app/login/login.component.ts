@@ -10,13 +10,13 @@ import * as $ from 'jquery';
 export class LoginComponent {
   constructor(private router: Router) { }
 
-  Login(nome: string, senha: string) {
+  Login(usuario: string, senha: string) {
 
     console.log('Passei no primeiro ponto do login');
     $.post(
       `https://kwr3pd-3000.csb.app/login`,
       {
-        nome: nome,
+        usuario: usuario,
         senha: senha
       },
       (res) => {
@@ -36,10 +36,10 @@ export class LoginComponent {
           window.location.reload();
         }
         else if (res[0].ID === 1) {
-          this.localStorage(res[0].ID, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao, res[0].cargo);
+          this.localStorage(res[0].ID, res[0].usuario, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao, res[0].cargo);
           this.router.navigate(['/restaurantes']);
         } else {
-          this.localStorage(res[0].ID, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao, res[0].cargo);
+          this.localStorage(res[0].ID, res[0].usuario, res[0].nome, res[0].senha, res[0].endereco, res[0].link, res[0].descricao, res[0].cargo);
           this.router.navigate(['/menu-restaurante']);
         }
         console.log(res[0].cargo);
@@ -48,10 +48,11 @@ export class LoginComponent {
     );
   }
 
-  localStorage(id: string, nome: string, senha: string, endereco: string, link: string, descricao: string, cargo: string) {
+  localStorage(id: string, usuario: string, nome: string, senha: string, endereco: string, link: string, descricao: string, cargo: string) {
     console.log('Fui acionado');
 
     localStorage.setItem('id', id); //salvando o id no localStorage
+    localStorage.setItem('usuario', usuario);
     localStorage.setItem('nome', nome);
     localStorage.setItem('senha', senha);
     localStorage.setItem('endereco', endereco);

@@ -1,3 +1,4 @@
+<app-funcao-autenticadora></app-funcao-autenticadora>
 <main>
 
     <div class="container">
@@ -38,10 +39,10 @@
                 </div>
                 <div class="box-50">
                     <div class="box-right-form">
-                        <input type="text" name="" id="" placeholder="Nome do Restaurante">
-                        <input type="text" name="" id="" placeholder="Endereço/ Unidade">
-                        <input type="text" name="" id="" placeholder="Descrição">
-                        <button>Salvar</button>
+                        <input type="text" name="" id="" placeholder="Nome do Restaurante" #nome>
+                        <input type="text" name="" id="" placeholder="Endereço/ Unidade" #endereco>
+                        <input type="text" name="" id="" placeholder="Descrição" #descricao>
+                        <button (click)="AlterarPerfil(nome.value, endereco.value, descricao.value)">Salvar</button>
                     </div>
                 </div>
             </div>

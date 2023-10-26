@@ -21,13 +21,16 @@
             <div class="flex">
                 <div class="box-100" *ngFor="let restaurante of restaurantes">
                     <div class="flex-between box-btn-item-lista">
-                        <div class="box-50">
+                        <div class="box-30">
                             <div class="box-btn-lista">
-                                <button #nome>{{ restaurante.nome }}</button>
+                                <button #usuario>{{ restaurante.nome }}</button>
                             </div>
                         </div>
                         <div class="box-20">
-                          <p #status>{{ restaurante.status }}</p>
+                          <p #usuario>Usuário: {{ restaurante.usuario }}</p>
+                        </div>
+                        <div class="box-20">
+                          <p #status>Status: {{ restaurante.status }}</p>
                         </div>
                         <div class="box-30">
                             <div class="box-btn-lixeira text-right">

@@ -14,15 +14,16 @@ export class ModalAdicionarRestauranteComponent {
     window.location.reload();
   }
 
-  cadastroRestaurante(nome: string, senha: string) {
+  cadastroRestaurante(usuario: string, senha: string, nome: string) {
 
-    console.log('Passei no primeiro ponto do login');
+    console.log('Cadastrando');
 
     $.post(
       `https://kwr3pd-3000.csb.app/cadastroRestaurante`,
       {
-        nome: nome,
-        senha: senha
+        usuario: usuario,
+        senha: senha,
+        nome: nome
       },
       (res) => {
         console.log(res);
