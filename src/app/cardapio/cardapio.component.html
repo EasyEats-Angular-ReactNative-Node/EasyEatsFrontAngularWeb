@@ -28,7 +28,7 @@
     </div>
     <div class="container">
         <div class="box-bg-lista">
-            <div class="flex">
+            <div class="flex box-overflow-cardapio">
                 <div class="box-100">
                     <div class="flex-between box-bg-lista">
                         <div class="box-20">
@@ -41,12 +41,12 @@
                                 <p>Item</p>
                             </div>
                         </div>
-                        <div class="box-30">
+                        <div class="box-40">
                             <div class="box-desc-cardapio">
                                 <p>Descrição</p>
                             </div>
                         </div>
-                        <div class="box-20">
+                        <div class="box-10">
                             <div class="box-preco-cardapio text-right">
                                 <p>Preço</p>
                             </div>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box-100">
+                <div class="box-100" *ngFor="let prato of pratos">
                     <div class="flex-between box-btn-item-lista">
                         <div class="box-20">
                             <div class="box-img-cardapio">
@@ -64,17 +64,17 @@
                         </div>
                         <div class="box-20">
                             <div class="box-item-cardapio">
-                                <p>Pão</p>
+                                <p>{{prato.nome}}</p>
                             </div>
                         </div>
-                        <div class="box-30">
+                        <div class="box-40">
                             <div class="box-desc-cardapio">
-                                <p>Pão quentinho com manteiga</p>
+                                <p>{{prato.descricao}}</p>
                             </div>
                         </div>
-                        <div class="box-20">
+                        <div class="box-10">
                             <div class="box-preco-cardapio text-right">
-                                <p>R$ 10,99</p>
+                                <p>{{prato.preco}}</p>
                             </div>
                         </div>
                         <div class="box-10">
