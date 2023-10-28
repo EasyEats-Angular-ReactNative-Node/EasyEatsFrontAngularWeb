@@ -19,7 +19,7 @@ export class ModalAdicionarRestauranteComponent {
     console.log('Cadastrando');
 
     $.post(
-      `https://kwr3pd-3000.csb.app/cadastroRestaurante`,
+      `https://kwr3pd-4200.csb.app/cadastroRestaurante`,
       {
         usuario: usuario,
         senha: senha,
