@@ -42,7 +42,7 @@
     background: #1D4652;
     padding: 17px 14px;
     border-radius: 11px;
-    margin: 15px 0;
+    margin: 2px 0;
 }
 
 .box-btn-lista button {
@@ -67,8 +67,11 @@
 }
 
 .box-overflow-cardapio {
-    height: 50vh;
-    overflow-y: auto;
+  overflow-y: auto;
+  height: 55vh;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 .box-overflow-cardapio::-webkit-scrollbar {
