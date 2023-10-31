@@ -23,7 +23,7 @@ export class ModalAdicionarPratoComponent {
     console.log('Cadastrando Prato');
 
     $.post(
-      `https://kwr3pd-3000.csb.app/cadastroPratoCardapio`,
+      `https://kwr3pd-4200.csb.app/cadastroPratoCardapio`,
       {
         nome: nome,
         categoria: categoria,

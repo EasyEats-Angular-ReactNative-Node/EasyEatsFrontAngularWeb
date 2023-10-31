@@ -427,6 +427,15 @@ table {
     flex-wrap: wrap;
 }
 
+.flex-start{
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-wrap: wrap;
+}
+
 .flex-leftt {
     display: flex;
     align-items: center;

@@ -183,6 +183,17 @@
   margin-bottom: 10px ;
 }
 
+.box-right-form select {
+  background: #051e25;
+  color: #acacac;
+  border: none;
+  width: 95%;
+  height: 57px;
+  padding: 10px;
+  border-radius: 16px;
+  margin-bottom: 10px ;
+}
+
 .box-btn-adicionar-prato{
   display: flex;
   width: 94%;
@@ -201,17 +212,6 @@
   font-family: 'Sora', sans-serif;
   width: 93%;
   transition: .6s all;
-}
-
-.box-right-form{
-  width: 95%;
-  height: 59px;
-  margin: 1px 0 11px 0;
-  background: #051e25;
-  border: none;
-  padding: 10px;
-  color: #cccccc;
-  border-radius: 16px;
 }
 
 .btn-left-adc-btn:hover {
@@ -233,5 +233,5 @@
 
 .btn-right-adc-btn:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.1);
 }
