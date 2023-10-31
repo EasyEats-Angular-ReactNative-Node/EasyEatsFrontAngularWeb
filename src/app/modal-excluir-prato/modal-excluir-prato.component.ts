@@ -11,14 +11,15 @@ export class ModalExcluirPratoComponent {
   constructor(private router: Router) {}
 
   ExcluirPrato() {
-    let deletarID = localStorage.getItem('deletarID');
+
+    let pratoID = localStorage.getItem('pratoID')
 
     console.log('Estou a caminho de Exluir o Prato');
     console.log('Ovo Exclui');
     $.post(
-      `https://kwr3pd-3000.csb.app/excluirPratoCardapio`,
+      `https://kwr3pd-4200.csb.app/excluirPratoCardapio`,
       {
-        id: deletarID
+        id: pratoID
       },
       (res) => {
         console.log(res);

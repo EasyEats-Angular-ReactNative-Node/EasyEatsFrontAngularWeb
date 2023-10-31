@@ -78,7 +78,8 @@
             </div>
             <div class="box-10">
               <div class="box-btn-lixeira text-right">
-                <button (click)="openModal()" class="box-btn-lixeira">
+                <textarea class="pratoID" #pratoID>{{ prato.id }}</textarea>
+                <button (click)="openModal(pratoID.value)" class="box-btn-lixeira">
                   <img
                     src="../../assets/main/lista/lixeira.png"
                     alt="Lixeira"

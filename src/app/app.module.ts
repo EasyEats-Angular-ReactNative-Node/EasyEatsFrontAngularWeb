@@ -10,7 +10,6 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
 import { PratoComponent } from './prato/prato.component';
 import { MesasComponent } from './mesas/mesas.component';
-import { MesaComponent } from './mesa/mesa.component';
 import { CozinhaComponent } from './cozinha/cozinha.component';
 import { HeaderComponent } from './header/header.component';
 import { ModalAdicionarRestauranteComponent } from './modal-adicionar-restaurante/modal-adicionar-restaurante.component';
@@ -32,7 +31,6 @@ import { FuncaoAutenticadoraComponent } from './funcao-autenticadora/funcao-aute
     CardapioComponent,
     PratoComponent,
     MesasComponent,
-    MesaComponent,
     CozinhaComponent,
     HeaderComponent,
     ModalAdicionarRestauranteComponent,

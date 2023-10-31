@@ -25,7 +25,9 @@ export class CardapioComponent {
     modal_excluir?.classList.add("box_modal_cardapio-excluir")
     modal_adicionar?.classList.add("box_modal_cardapio-adicionar")
   }
-  openModal() {
+  openModal(pratoID:string) {
+    localStorage.setItem('pratoID', pratoID);
+
     let modal_abrir = document.getElementById("box_modal_cardapio-excluir");
 
     modal_abrir?.classList.remove("box_modal_cardapio-excluir");

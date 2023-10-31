@@ -7,7 +7,6 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
 import { PratoComponent } from './prato/prato.component';
 import { MesasComponent } from './mesas/mesas.component';
-import { MesaComponent } from './mesa/mesa.component';
 import { CozinhaComponent } from './cozinha/cozinha.component';
 
 const routes: Routes = [
@@ -18,7 +17,6 @@ const routes: Routes = [
   { path: 'cardapio', component: CardapioComponent },
   { path: 'prato', component: PratoComponent },
   { path: 'mesas', component: MesasComponent },
-  { path: 'mesa', component: MesaComponent },
   { path: 'cozinha', component: CozinhaComponent }
 ];
 
