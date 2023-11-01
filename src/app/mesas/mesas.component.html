@@ -21,7 +21,7 @@
             </div>
             <div class="box-50">
                 <div class="box-btn-adicionar-lista text-right">
-                    <button>Adicionar</button>
+                    <button (click)="openModalAdicionar()">Adicionar</button>
                 </div>
             </div>
         </div>
@@ -57,15 +57,21 @@
                         </div>
                         <div class="box-10">
                             <div class="box-btn-lixeira text-right">
-                                <button class="box-btn-lixeira"><img src="../../assets/main/lista/lixeira.png"
+                                <button class="box-btn-lixeira"><img src="../../assets/main/edicao.png"
                                         alt="Lixeira"></button>
-                                <button class="box-btn-lixeira"><img src="../../assets/main/lista/lixeira.png"
-                                    alt="Lixeira"></button>
+                                <button (click)="openModalExcluir()" class="box-btn-lixeira"><img
+                                        src="../../assets/main/lista/lixeira.png" alt="Lixeira"></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="box_modal_mesa-adicionar">
+        <app-modal-adicionar-mesa></app-modal-adicionar-mesa>
+    </div>
+    <div id="box_modal_mesa-excluir">
+        <app-modal-excluir-mesa></app-modal-excluir-mesa>
     </div>
 </main>

@@ -1,1 +1,17 @@
-<p>modal-adicionar-mesa works!</p>
+<div class="box-bg-lista">
+    <div class="flex">
+        <div class="box-100">
+            <div class="box-right-form">
+                <input #nome type="text" name="nome" id="nome" placeholder="Nome do Usuário">
+                <input #senhaMesa type="text" name="senhaMesa" id="senhaMesa" placeholder="Senha da Mesa">
+                <input #mesa type="text" name="mesa" id="mesa" placeholder="Mesa">
+                <input #descicao type="text" name="descicao" id="descicao" placeholder="Descrição">
+                <div class="box-btn-adicionar-prato">
+                    <button class="btn-left-adc-btn" (click)="closeModalAdicionar()">Cancelar</button>
+                    <button (click)="cadastroPrato(nome.value, senhaMesa.value, descicao.value, mesa.value )"
+                        class="btn-right-adc-btn">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

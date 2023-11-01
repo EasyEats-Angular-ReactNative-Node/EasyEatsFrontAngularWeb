@@ -1,3 +1,7 @@
+.pratoID {
+    display: none;
+}
+
 .box-title-lista h1 {
     color: #C9C9C9;
     font-weight: 800;
@@ -9,7 +13,7 @@
     text-align: right;
 }
 
-.box-bg-lista{
+.box-bg-lista {
     margin: 8px 0;
 }
 
@@ -42,7 +46,7 @@
     background: #1D4652;
     padding: 17px 14px;
     border-radius: 11px;
-    margin: 15px 0;
+    margin: 4px 0;
 }
 
 .box-btn-lista button {
@@ -66,13 +70,58 @@
     transform: scale(1.1);
 }
 
-.box-btn-lixeira button {
-    margin: 0 10px;
+.box-overflow-cardapio {
+    overflow-y: auto;
+    height: 55vh;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.box-overflow-cardapio::-webkit-scrollbar {
+    width: 16px;
+}
+
+.box-overflow-cardapio::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    background-color: #F9903A
+}
+
+.box-overflow-cardapio::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
 }
 
 /* Modal */
 
-.box-modal-component{
+.box_modal_mesa-excluir-1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.box_modal_mesa-excluir {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.box_modal_mesa-adicionar-1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.box_modal_mesa-adicionar {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -83,6 +132,32 @@
 .box-img-cardapio p,
 .box-item-cardapio p,
 .box-desc-cardapio p,
-.box-preco-cardapio p{
+.box-preco-cardapio p {
     color: #c9c9c9;
+}
+
+#box_modal_mesa-excluir::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333b0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .6s all ease;
+}
+
+#box_modal_mesa-adicionar::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333b0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .6s all ease;
 }

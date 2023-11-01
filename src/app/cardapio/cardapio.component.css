@@ -1,5 +1,5 @@
-.pratoID{
-  display: none;
+.pratoID {
+    display: none;
 }
 
 .box-title-lista h1 {
@@ -71,11 +71,12 @@
 }
 
 .box-overflow-cardapio {
-  overflow-y: auto;
-  height: 55vh;
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 40vh;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
 }
 
 .box-overflow-cardapio::-webkit-scrollbar {
