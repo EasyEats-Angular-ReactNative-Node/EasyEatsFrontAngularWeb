@@ -16,7 +16,6 @@ export class CardapioComponent {
 
   ngOnInit() {
 
-
     this.Pratos();
 
     let modal_excluir = document.getElementById("box_modal_cardapio-excluir");

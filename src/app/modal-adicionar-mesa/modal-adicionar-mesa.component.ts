@@ -30,6 +30,7 @@ export class ModalAdicionarMesaComponent {
       },
       (res) => {
         console.log(res);
+        alert(res);
         window.location.reload();
       }
     );
