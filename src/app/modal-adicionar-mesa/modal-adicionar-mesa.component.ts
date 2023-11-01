@@ -14,7 +14,7 @@ export class ModalAdicionarMesaComponent {
     window.location.reload()
   }
 
-  cadastroPrato(nome: string, senhaMesa: string, mesa: string, descricao: string,) {
+  cadastroPrato(usuario: string, senha: string, nome: string, descricao: string,) {
     let id_restaurante = localStorage.getItem("id");
 
     console.log('Cadastrando Prato');
@@ -22,15 +22,14 @@ export class ModalAdicionarMesaComponent {
     $.post(
       `https://kwr3pd-4200.csb.app/criarMesa`,
       {
+        usuario: usuario,
+        senha: senha,
         nome: nome,
-        senhaMesa: senhaMesa,
-        mesa: mesa,
         descricao: descricao,
         id_restaurante: id_restaurante
       },
       (res) => {
         console.log(res);
-        console.log('Ovo Cadastra');
         window.location.reload();
       }
     );
