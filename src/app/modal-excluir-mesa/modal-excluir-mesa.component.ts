@@ -11,12 +11,14 @@ export class ModalExcluirMesaComponent {
   constructor(private router: Router) { }
 
   ExcluirMesa() {
+    let mesaID = localStorage.getItem('mesaID')
 
-    console.log('Estou a caminho de excluir a Mesa');
+    console.log('Estou a caminho de excluir a mesa');
     console.log('Ovo Exclui');
     $.post(
       `https://kwr3pd-4200.csb.app/excluirMesa`,
       {
+        id: mesaID
       },
       (res) => {
         console.log(res);

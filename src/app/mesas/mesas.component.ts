@@ -23,16 +23,14 @@ export class MesasComponent {
     modal_excluir?.classList.add("box_modal_mesa-excluir")
     modal_adicionar?.classList.add("box_modal_mesa-adicionar")
   }
-  openModalExcluir() {
-
+  openModalExcluir(mesaID:string) {
+    localStorage.setItem('mesaID', mesaID);
     let modal_abrir = document.getElementById("box_modal_mesa-excluir");
-
     modal_abrir?.classList.remove("box_modal_mesa-excluir");
     modal_abrir?.classList.add("box_modal_mesa-excluir-1");
   }
   openModalAdicionar() {
     let modal_abrir_adicionar = document.getElementById("box_modal_mesa-adicionar");
-
     modal_abrir_adicionar?.classList.remove("box_modal_mesa-adicionar");
     modal_abrir_adicionar?.classList.add("box_modal_mesa-adicionar-1");
   }
@@ -41,7 +39,6 @@ export class MesasComponent {
     let id_restaurante = localStorage.getItem("id")
     console.log('Iniciando a busca das mesas');
     console.log("O ID selecionado é: " + id_restaurante);
-
 
     $.post(`https://kwr3pd-4200.csb.app/mesas`, {id_restaurante: id_restaurante}, (res) => {
       console.log("Recebi alguma coisa");

@@ -11,7 +11,6 @@ export class ModalExcluirPratoComponent {
   constructor(private router: Router) {}
 
   ExcluirPrato() {
-
     let pratoID = localStorage.getItem('pratoID')
 
     console.log('Estou a caminho de Exluir o Prato');

@@ -80,7 +80,8 @@
                 <button class="box-btn-lixeira">
                   <img src="../../assets/main/edicao.png" alt="Lixeira" />
                 </button>
-                <button (click)="openModalExcluir()" class="box-btn-lixeira">
+                <textarea class="mesaID" #mesaID>{{ mesa.id }}</textarea>
+                <button (click)="openModalExcluir(mesaID.value)" class="box-btn-lixeira">
                   <img
                     src="../../assets/main/lista/lixeira.png"
                     alt="Lixeira"
