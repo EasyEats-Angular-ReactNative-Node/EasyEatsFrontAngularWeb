@@ -12,16 +12,16 @@ export class LoginComponent {
 
   Login(usuario: string, senha: string) {
 
-    console.log('Passei no primeiro ponto do login');
+    console.log('Função Login Acionada!');
     $.post(
-      `https://kwr3pd-4200.csb.app/login`,
+      `https://kwr3pd-4200.csb.app/login-web`,
       {
         usuario: usuario,
         senha: senha
       },
       (res) => {
+        console.log('Colhi uma resposta');
         console.log(res);
-        console.log('Passei no segundo ponto do login');
 
         if (res === "Senha incorreta") {
           alert('Senha incorreta')
