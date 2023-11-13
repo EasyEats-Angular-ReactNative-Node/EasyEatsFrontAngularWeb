@@ -40,9 +40,14 @@
               <p>Item</p>
             </div>
           </div>
-          <div class="box-40">
+          <div class="box-30">
             <div class="box-desc-cardapio">
               <p>Descrição</p>
+            </div>
+          </div>
+          <div class="box-10">
+            <div class="box-desc-cardapio">
+              <p>Categoria</p>
             </div>
           </div>
           <div class="box-10">
@@ -66,14 +71,19 @@
                 <p>{{ prato.nome }}</p>
               </div>
             </div>
-            <div class="box-40">
+            <div class="box-30">
               <div class="box-desc-cardapio">
                 <p>{{ prato.descricao }}</p>
               </div>
             </div>
             <div class="box-10">
+              <div class="box-desc-cardapio">
+                <p>{{ prato.categoria }}</p>
+              </div>
+            </div>
+            <div class="box-10">
               <div class="box-preco-cardapio text-right">
-                <p>{{ prato.preco }}</p>
+                <p>R$ {{ prato.preco }},00</p>
               </div>
             </div>
             <div class="box-10">
