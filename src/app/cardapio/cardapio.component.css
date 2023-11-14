@@ -40,6 +40,29 @@
     background: #12353F;
     padding: 10px 14px;
     border-radius: 16px;
+
+}
+
+.box-bg-lista-principal{
+  height: 30px;
+  overflow-y: scroll;
+}
+
+.box-bg-lista-principal::-webkit-scrollbar {
+  width: 16px;
+}
+
+.box-bg-lista-principal::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  background-color: transparent
+}
+
+.box-bg-lista-principal::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
 }
 
 .box-btn-item-lista {
