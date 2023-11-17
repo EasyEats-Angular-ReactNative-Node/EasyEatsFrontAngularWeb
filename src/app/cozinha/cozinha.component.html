@@ -8,11 +8,11 @@
     </div>
   </div>
   <div class="box-bg-cozinha">
-    <div class="box-item-cozinha" *ngFor="let pedido of pedidos">
+    <div class="box-item-cozinha" *ngFor="let pedido of pedidos" >
       <div class="flex-between box-btn-item-lista">
         <div class="box-100">
           <div class="box-img-cardapio">
-            <p>Mesa 1</p>
+            <p>{{pedido.nomeMesa}}</p>
           </div>
         </div>
         <div class="box-100">
@@ -22,7 +22,7 @@
         </div>
         <div class="box-100">
           <div class="box-desc-cardapio">
-            <p>Pãozinho quentinho</p>
+            <p>{{pedido.nome}}</p>
           </div>
         </div>
         <div class="box-100">
@@ -32,12 +32,12 @@
         </div>
         <div class="box-100">
           <div class="box-desc-cardapio">
-            <p>Sem Picles</p>
+            <p>Não implementado</p>
           </div>
         </div>
         <div class="box-100">
           <div class="box-btn-lixeira text-right">
-            <button>Finalizar</button>
+            <button (click)="Entregar(pedido.id)">Entregar</button>
           </div>
         </div>
       </div>
