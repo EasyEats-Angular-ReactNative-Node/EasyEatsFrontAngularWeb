@@ -20,7 +20,7 @@ export class ModalAdicionarMesaComponent {
     console.log('Cadastrando Prato');
 
     $.post(
-      `https://kwr3pd-4200.csb.app/criarMesa`,
+      `https://kwr3pd-3000.csb.app/criarMesa`,
       {
         usuario: usuario,
         senha: senha,

@@ -41,7 +41,7 @@ export class CardapioComponent {
 
   Pratos() {
     let id_restaurante = localStorage.getItem("id")
-    $.post(`https://kwr3pd-4200.csb.app/cardapio`, {id_restaurante: id_restaurante}, (res) => {
+    $.post(`https://kwr3pd-3000.csb.app/cardapio`, {id_restaurante: id_restaurante}, (res) => {
       console.log("Recebi alguma coisa");
       console.log(res);
       this.pratos = res;

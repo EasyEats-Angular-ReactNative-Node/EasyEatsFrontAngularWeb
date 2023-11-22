@@ -31,7 +31,7 @@ export class CozinhaComponent {
     let id_restaurante = localStorage.getItem('id');
 
     $.post(
-      `https://kwr3pd-4200.csb.app/cozinhaWeb`,
+      `https://kwr3pd-3000.csb.app/cozinhaWeb`,
       {
         id_restaurante: id_restaurante,
       },
@@ -50,7 +50,7 @@ export class CozinhaComponent {
     for (let index = 0; index < this.pedidos.length; index++) {
       console.log(this.pedidos[index].id_mesa);
       $.post(
-        `https://kwr3pd-4200.csb.app/mesaNome`,
+        `https://kwr3pd-3000.csb.app/mesaNome`,
         {
           id_mesa: this.pedidos[index].id_mesa,
         },
@@ -66,7 +66,7 @@ export class CozinhaComponent {
     console.log('Entregando Pedido ao Cliente');
 
     $.post(
-      `https://kwr3pd-4200.csb.app/entregarPedido`,
+      `https://kwr3pd-3000.csb.app/entregarPedido`,
       {
         id: id,
       },

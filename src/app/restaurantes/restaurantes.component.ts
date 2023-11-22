@@ -52,7 +52,7 @@ export class RestaurantesComponent {
   }
 
   Restaurantes() {
-    $.post(`https://kwr3pd-4200.csb.app/restaurantes`, {}, (res) => {
+    $.post(`https://kwr3pd-3000.csb.app/restaurantes`, {}, (res) => {
       console.log("Recebi alguma coisa");
       console.log(res);
       this.restaurantes = res;

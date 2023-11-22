@@ -16,7 +16,7 @@ export class ModalExcluirPratoComponent {
     console.log('Estou a caminho de Exluir o Prato');
     console.log('Ovo Exclui');
     $.post(
-      `https://kwr3pd-4200.csb.app/excluirPratoCardapio`,
+      `https://kwr3pd-3000.csb.app/excluirPratoCardapio`,
       {
         id: pratoID
       },

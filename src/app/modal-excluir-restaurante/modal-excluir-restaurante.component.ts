@@ -17,7 +17,7 @@ export class ModalExcluirRestauranteComponent {
     console.log('Estou a caminho de Exluir o restaurante');
     console.log('Ovo Exclui');
     $.post(
-      `https://kwr3pd-4200.csb.app/excluirRestaurante`,
+      `https://kwr3pd-3000.csb.app/excluirRestaurante`,
       {
         id: deletarID
       },
@@ -34,7 +34,7 @@ export class ModalExcluirRestauranteComponent {
     console.log('Estou a caminho de Restringir o restaurante');
 
     $.post(
-      `https://kwr3pd-4200.csb.app/restringirRestaurante`,
+      `https://kwr3pd-3000.csb.app/restringirRestaurante`,
       {
         id: deletarID
       },

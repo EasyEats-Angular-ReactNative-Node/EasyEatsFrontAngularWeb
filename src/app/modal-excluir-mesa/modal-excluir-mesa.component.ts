@@ -16,7 +16,7 @@ export class ModalExcluirMesaComponent {
     console.log('Estou a caminho de excluir a mesa');
     console.log('Ovo Exclui');
     $.post(
-      `https://kwr3pd-4200.csb.app/excluirMesa`,
+      `https://kwr3pd-3000.csb.app/excluirMesa`,
       {
         id: mesaID
       },

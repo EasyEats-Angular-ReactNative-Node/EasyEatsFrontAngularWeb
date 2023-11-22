@@ -17,7 +17,7 @@ export class PerfilComponent {
 
     console.log("Vou tentar alterar seu perfil");
     $.post(
-      `https://kwr3pd-4200.csb.app/atualizarRestaurante`,
+      `https://kwr3pd-3000.csb.app/atualizarRestaurante`,
       {
         id: id,
         nome: nome,
@@ -37,7 +37,7 @@ export class PerfilComponent {
     let id = localStorage.getItem('id')
     console.log("Estou buscando os novos dados do seu restaurante");
     $.post(
-      `https://kwr3pd-4200.csb.app/restaurante-id`,
+      `https://kwr3pd-3000.csb.app/restaurante-id`,
       {
         id: id,
       },
