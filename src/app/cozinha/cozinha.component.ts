@@ -14,15 +14,40 @@ export class CozinhaComponent {
   pedidos: any[];
 
   ngOnInit() {
-    this.atualizarDados();
-  }
-
-  atualizarDados() {
     this.Pedidos();
 
-    setInterval(() => {
-      this.Pedidos();
-    }, 5000); // Atualiza a cada 5 segundos
+    setTimeout(() => {
+      this.AtualizandoDados();
+    }, 3000);
+  }
+
+  AtualizandoDados() {
+    console.log('Atualizando Dados');
+
+    let id_restaurante = localStorage.getItem('id');
+
+    $.post(
+      `https://kwr3pd-3000.csb.app/cozinhaWeb`,
+      {
+        id_restaurante: id_restaurante,
+      },
+      (res) => {
+        if (res === 'Nenhum pedido encontrado') {
+          console.log('Nenhum pedido encontrado');
+          setTimeout(() => {
+            this.AtualizandoDados();
+          }, 3000);
+        } else if (this.pedidos.length === res.length) {
+          console.log('Tudo atualizado por aqui!');
+          setTimeout(() => {
+            this.AtualizandoDados();
+          }, 3000);
+        } else {
+          this.pedidos = res;
+          this.BuscarNomeMesa();
+        }
+      }
+    );
   }
 
   Pedidos() {
@@ -38,8 +63,15 @@ export class CozinhaComponent {
       (res) => {
         console.log('Recebi alguma coisa');
         console.log(res);
-        this.pedidos = res;
-        this.BuscarNomeMesa();
+        if (res === 'Nenhum pedido encontrado') {
+          console.log('Nenhum pedido encontrado');
+          setTimeout(() => {
+            this.AtualizandoDados();
+          }, 3000);
+        } else {
+          this.pedidos = res;
+          this.BuscarNomeMesa();
+        }
       }
     );
   }
@@ -55,8 +87,14 @@ export class CozinhaComponent {
           id_mesa: this.pedidos[index].id_mesa,
         },
         (res) => {
-          console.log(res[0].nome);
-          this.pedidos[index].nomeMesa = res[0].nome;
+          if (res === 'Mesa não encontrada') {
+            console.log(
+              'A função de achar o nome da mesa não achou nada. Acho que a cozinha está vazia...'
+            );
+          } else {
+            console.log(res[0].nome);
+            this.pedidos[index].nomeMesa = res[0].nome;
+          }
         }
       );
     }
