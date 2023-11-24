@@ -18,7 +18,7 @@ export class CozinhaComponent {
 
     setTimeout(() => {
       this.AtualizandoDados();
-    }, 3000);
+    }, 5000);
   }
 
   AtualizandoDados() {
@@ -36,12 +36,12 @@ export class CozinhaComponent {
           console.log('Nenhum pedido encontrado');
           setTimeout(() => {
             this.AtualizandoDados();
-          }, 3000);
+          }, 5500);
         } else if (this.pedidos.length === res.length) {
           console.log('Tudo atualizado por aqui!');
           setTimeout(() => {
             this.AtualizandoDados();
-          }, 3000);
+          }, 5100);
         } else {
           this.pedidos = res;
           this.BuscarNomeMesa();
@@ -67,7 +67,7 @@ export class CozinhaComponent {
           console.log('Nenhum pedido encontrado');
           setTimeout(() => {
             this.AtualizandoDados();
-          }, 3000);
+          }, 5300);
         } else {
           this.pedidos = res;
           this.BuscarNomeMesa();
